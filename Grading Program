@@ -1,0 +1,32 @@
+student_scores = {
+  "Harry": 81,
+  "Ron": 78,
+  "Hermione": 99, 
+  "Draco": 74,
+  "Neville": 62,
+}
+
+
+
+student_grades= {}
+
+for key in student_scores:
+     if student_scores[key] in range(0,71):
+        student_grades[key] = "Fail" 
+        # print(f"{key} :{student_scores[key]}") 
+
+
+     elif student_scores[key] in range(71,81):
+        student_grades[key] = "Acceptable" 
+        #print(f"{key} :{student_scores[key]}")
+
+     elif student_scores[key] in range(81,91):
+        student_grades[key] = "Exceeds Expectations" 
+        #z=print(f"{key} :{student_scores[key]}")
+
+     elif student_scores[key] in range(91,101):
+        student_grades[key] = "Outstanding" 
+       # s=print(f"{key} :{student_scores[key]}")
+
+                
+print(student_grades)
